@@ -7,7 +7,7 @@ projects:
 auth_kind: serviceaccount
 scopes:
   - https://www.googleapis.com/auth/compute
-service_account_file: /etc/ansible/inventory/service-account.json
+service_account_file: {{ secret.SA }}
 keyed_groups:
   - key: labels
     prefix: label
