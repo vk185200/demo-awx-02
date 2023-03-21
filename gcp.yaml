@@ -1,0 +1,19 @@
+---
+plugin: gcp_compute
+zones:
+  - europe-west3-c
+projects:
+  - dbk-nw-monitor-mgmt-wea01-prod
+auth_kind: serviceaccount
+scopes:
+  - https://www.googleapis.com/auth/compute
+service_account_file: /etc/ansible/inventory/service-account.json
+keyed_groups:
+  - key: labels
+    prefix: label
+  - key: zone
+    prefix: zone
+groups:
+  canaryawx: "'canary-ansible-awx-02' in (labels|list)"
+  jumpbox9: "'noc-play-jumpbox9' in (labels|list)"
+  # Cisco: "'jumpbox9-cisco' in (labels|list)"
