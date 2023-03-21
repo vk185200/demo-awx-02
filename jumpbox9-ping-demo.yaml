@@ -3,7 +3,7 @@
   gather_facts: yes
   become: false
   roles:
-    - role: ryankwilliams.ssh_copy_id
+    - role: ansible.ssh_copy_id
       vars:
         hostname: 10.200.0.7
         username: ansible
