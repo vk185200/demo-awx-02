@@ -7,7 +7,7 @@ projects:
 auth_kind: serviceaccount
 scopes:
   - https://www.googleapis.com/auth/compute
-service_account_file: {{ secret.SA }}
+service_account_file: ${{ secrets.SA }}
 keyed_groups:
   - key: labels
     prefix: label
