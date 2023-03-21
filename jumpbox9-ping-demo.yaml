@@ -2,13 +2,6 @@
   hosts: 10.200.0.7
   gather_facts: yes
   become: false
-  roles:
-    - role: ansible.ssh_copy_id
-      vars:
-        hostname: 10.200.0.7
-        username: ansible
-        ssh_public_key: /home/ansible/.ssh/id_rsa.pub
-        ssh_port: 22
   tasks:
   - name: Distribution
     debug: msg="{{ ansible_distribution }}"
