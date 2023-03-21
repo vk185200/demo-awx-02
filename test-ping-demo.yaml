@@ -1,6 +1,6 @@
 ---
 - name: Centos Linux Distribution
-  hosts: 10.200.0.5
+  hosts: noc-playground-rundeck-01
   gather_facts: yes
   become: false
   tasks:
@@ -14,7 +14,7 @@
     debug: msg="{{ ansible_distribution_major_version }}"
 
 - name: Ubuntu Linux Distribution
-  hosts: 10.200.0.7
+  hosts: jumpbox9
   gather_facts: yes
   become: false
   tasks:
