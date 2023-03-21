@@ -1,5 +1,5 @@
 - name: Ubuntu Linux Distribution
-  hosts: jumpbox9
+  hosts: 10.200.0.7
   gather_facts: yes
   become: false
   tasks:
