@@ -1,0 +1,5 @@
+# Crash log files
+crash.log
+
+# Service account
+service-account.json
