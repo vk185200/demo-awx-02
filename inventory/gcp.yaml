@@ -14,6 +14,6 @@ keyed_groups:
   - key: zone
     prefix: zone
 groups:
-  canaryawx: "'canary-ansible-awx-02' in (labels|list)"
+  nocplay: "'noc-playground-rundeck-01' in (labels|list)"
   jumpbox9: "'noc-play-jumpbox9' in (labels|list)"
   # Cisco: "'jumpbox9-cisco' in (labels|list)"
