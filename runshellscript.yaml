@@ -1,6 +1,6 @@
 ---
 - name: Ubuntu Linux Distribution
-  hosts: 10.200.0.4
+  hosts: 10.200.0.7
   gather_facts: yes
   become: true
   tasks:
@@ -14,7 +14,7 @@
     debug: msg="{{ ansible_distribution_major_version }}"
     
 - name: Create a file in the home directory if it doesn't exist
-  hosts: 10.200.0.4
+  hosts: 10.200.0.7
   tasks:
   - name: Create a file in the home directory
     shell: echo "Hey guys!" > /home/ansible/hello.txt
