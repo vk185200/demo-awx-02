@@ -1,3 +1,4 @@
+---
 - name: Ubuntu Linux Distribution
   hosts: 10.200.0.4
   gather_facts: yes
