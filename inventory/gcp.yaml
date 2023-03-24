@@ -15,5 +15,6 @@ keyed_groups:
     prefix: zone
 groups:
   nocplay: "'noc-playground-rundeck-01' in (labels|list)"
+  jumpbox8: "'noc-play-jumpbox8' in (labels|list)"
   jumpbox9: "'noc-play-jumpbox9' in (labels|list)"
   # Cisco: "'jumpbox9-cisco' in (labels|list)"
