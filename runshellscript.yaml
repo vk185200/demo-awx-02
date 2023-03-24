@@ -1,0 +1,8 @@
+---
+- name: Create a file in the home directory if it doesn't exist
+  hosts: 10.200.0.4
+  tasks:
+  - name: Create a file in the home directory
+    shell: echo "Hey guys!" > /home/ansible/hello.txt
+    args:
+      creates: "/home/ansible/hello.txt"
