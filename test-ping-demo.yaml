@@ -1,20 +1,20 @@
----
-- name: Centos Linux Distribution
-  hosts: noc-playground-rundeck-01
-  gather_facts: yes
-  become: false
-  tasks:
-  - name: Distribution
-    debug: msg="{{ ansible_distribution }}"
+# ---
+# - name: Centos Linux Distribution
+#   hosts: noc-playground-rundeck-01
+#   gather_facts: yes
+#   become: false
+#   tasks:
+#   - name: Distribution
+#     debug: msg="{{ ansible_distribution }}"
 
-  - name: Distribution version
-    debug: msg="{{ ansible_distribution_version}}"
+#   - name: Distribution version
+#     debug: msg="{{ ansible_distribution_version}}"
 
-  - name: Distribution major version
-    debug: msg="{{ ansible_distribution_major_version }}"
+#   - name: Distribution major version
+#     debug: msg="{{ ansible_distribution_major_version }}"
 
 - name: Ubuntu Linux Distribution
-  hosts: jumpbox9
+  hosts: 10.200.0.4
   gather_facts: yes
   become: false
   tasks:
